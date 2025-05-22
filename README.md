@@ -20,7 +20,7 @@ faculdade/
 
 - **Autor:** Rhuan Miguel
 - **Objetivo:** Centralizar e versionar meus materiais acadêmicos.
-- **Contato:** [Seu email ou rede social, opcional]
+- **Contato:** rhuanmiguel99113@gmail.com
 
 ## Como usar
 
