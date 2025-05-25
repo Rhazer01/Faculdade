@@ -73,14 +73,14 @@ gcc main.c backend.c frontend.c -o gerenciador.exe
 
 ## ℹ️ Observações
 
-- Sistema simples, sem banco de dados; utiliza arquivos texto
-- Projeto para fins didáticos do 1º semestre de Programação de Computadores (PCG)
+- Sistema simples; utiliza arquivos texto
+- Projeto para fins didáticos do PCG do 1º semestre de Ciências da Computação (PCG)
 - Uso de `system("color")` e `system("cls")` para efeitos visuais no terminal do Windows
 
 ---
 
 ## 👨‍💻 Feito por
 
-Desenvolvido para atividades do 1º semestre de Ciência da Computação.
+Rhuan Miguel, Yasmin Ferreira, Miguel Dantas, Francisco Coutinho, Eduarda Gonçalves, João Matheus
 
 ---
