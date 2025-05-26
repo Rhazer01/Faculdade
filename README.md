@@ -50,4 +50,4 @@ Abra uma _issue_ ou envie um _pull request_.
 
 ---
 
-![Badge](https://img.shields.io/badge/Faculdade-Projetos-blue?style=for-the-badge)
+[![Badge](https://img.shields.io/badge/Faculdade-Projetos-blue?style=for-the-badge)](https://github.com/Rhazer01/Faculdade/tree/1-Semestre/1%20-%20Semestre)
