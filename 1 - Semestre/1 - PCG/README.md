@@ -81,6 +81,6 @@ gcc main.c backend.c frontend.c -o gerenciador.exe
 
 ## 👨‍💻 Feito por
 
-Rhuan Miguel, Yasmin Ferreira, Miguel Dantas, Francisco Coutinho, Eduarda Gonçalves, João Matheus
+Rhuan Miguel, Yasmin Vitória, Miguel Dantas, Francisco Coutinho, Eduarda Gonçalves, João Matheus
 
 ---
