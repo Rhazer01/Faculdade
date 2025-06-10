@@ -50,6 +50,6 @@ Abra uma _issue_ ou envie um _pull request_.
 
 ---
 
-[![Repositório Faculdade](https://img.shields.io/badge/Repositório-Faculdade-green)](https://github.com/Rhazer01/Faculdade/branches)
+[![Repositório Faculdade](https://img.shields.io/badge/REPOSITÓRIO-FACULDADE-green)](https://github.com/Rhazer01/Faculdade/branches)
 
 
