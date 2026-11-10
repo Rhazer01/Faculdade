@@ -55,5 +55,83 @@
         </div>
     </header>
 
+    <!-- CONTEUDO PRINCIPAL (ÁREA DE CONSULTA) -->
+     <main class="container my-4">
+
+        <!-- PASSO 1: VÁRIÁVEIS DISPONÍVEIS -->
+        <section class="card border border-dark-subtle rounded-0 p-4 mb-4 bg-white shadow-sm">
+
+            <!-- Título do passo -->
+            <h2 class="h6 fw-bold mb-3 text-dark">Passo 1: Váriaveis Disponíveis</h2>
+
+            <!-- Grid de 3 colunas (Linha, Coluna e Métrica) -->
+             <div class="row g-3">
+
+                <!-- Coluna 1: Linha -->
+                 <div class="col-12 col-md-4">
+                    <label for="varLinha" class="form-label small fw-semibold text-secondary d-flex align-items-center gap-1">
+                        Váriavel da Linha <span class="text-danger">*</span>
+                        <i class="fa-regular fa-circle-question text-muted" title="Define o que aparecerá nas linhas da tabela"></i>
+                    </label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0 text-muted">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <select class="form-select border-start-0" id="varLinha">
+                            <option selected>Município (SP)</option>
+                            <option value="1">Região de Saúde (CIR)</option>
+                            <option value="2">Macrorregião de Saúde</option>
+                            <option value="3">Faixa Etária</option>
+                            <option value="4">Sexo</option>
+                        </select>
+                    </div>
+                 </div>
+                
+                 <!-- Coluna 2: Coluna -->
+                 <div class="col-12 col-md-4">
+                    <label for="varColuna" class="form-label small fw-semibold text-secondary">
+                        Variável da Coluna <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0 text-muted">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <select class="form-select border-start-0" id="varColuna">
+                            <option selected>Ano de atendimento</option>
+                            <option value="1">Mês de atendimento</option>
+                            <option value="2">Faixa Etária</option>
+                            <option value="3">Sexo</option>
+                            <option value="4">Não ativa</option>
+                        </select>
+                    </div>
+                 </div>
+                 
+                 <!-- Coluna 3: Métrica / Dado -->
+                <div class="col-12 col-md-4">
+                    <label for="varMetrica" class="form-label small fw-semibold text-secondary">
+                        Dado / Conteúdo (Métrica) <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0 text-muted">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <select class="form-select border-start-0" id="varMetrica">
+                            <option selected>Internações (Número Total)</option>
+                            <option value="1">AIH pagas</option>
+                            <option value="2">Valor total (R$)</option>
+                            <option value="3">Média de permanência (dias)</option>
+                            <option value="4">Óbitos</option>
+                            <option value="5">Taxa de mortalidade</option>
+                        </select>
+                    </div>
+                </div>
+             </div>
+
+
+
+
+        </section>
+     </main>
+
 </body>
 </html>
