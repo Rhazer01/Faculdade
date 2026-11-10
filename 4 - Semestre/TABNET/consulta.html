@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br"
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,3 +13,47 @@
     <!-- 4. Nosso CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body class="bg-white">
+
+    <!-- NAVBAR SUPERIOR DO DATASUS -->
+    <header class="bg-white border-bottom shadow-sm">
+        <div class="container-fluid px-4 py-2 d-flex justify-content-between align-items-center">
+
+            <!-- Lado Esquerdo: Botão Menu + Títulos -->
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-light border-0 px-2 py-1" type="button" aria-label="Abrir Menu">
+                    <i class="fa-solid fa-bars fs-5" style="color: #1351B4;"></i>
+                </button>
+                <div>
+                    <h1 class="h6 fw-bold mb-0 text-dark">TABNET DATASUS</h1>
+                    <span class="text-muted" style="font-size: 0.75rem;">
+                        Morbidade Hospitalar do SUS (SIH/SUS) — Por local de internação — São Paulo
+                    </span>
+                </div>
+            </div>
+
+            <!-- Lado Direito: Links de Acesso, Ícones de Utilidade e Perfil -->
+            <div class="d-flex align-items-center gap-3">
+
+                <!-- Ícone de Ação/Suporte -->
+                <div class="d-flex align-items-center gap-3 border-start ps-3" style="color: #1351B4;">
+                    <a href="#" class="text-decoration-none" title="Estatísticas" style="color: #1351B4;"><i class="fa-solid fa-chart-simple"></i></a>
+                    <a href="#" class="text-decoration-none" title="Suporte" style="color: #1351B4;"><i class="fa-solid fa-headset"></i></a>
+                    <a href="#" class="text-decoration-none" title="Unidades de Saúde" style="color: #1351B4;"><i class="fa-solid fa-hospital"></i></a>
+                    <a href="#" class="text-decoration-none" title="Mensagens" style="color: #1351B4;"><i class="fa-solid fa-comment-dots"></i></a>
+                    <a href="#" class="text-decoration-none" title="Alto Contraste" style="color: #1351B4;"><i class="fa-solid fa-circle-half-stroke"></i></a>
+                </div>
+
+                <!-- Botão de Login / Perfil -->
+                <a href="login-gov.html" class="btn btn-outline-primary btn-sm rounded-pill px-3 ms-2 d-flex align-items-center gap-2"
+                   style="color: #1351B4; border-color: #1351B4;">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="fw-medium">Entrar</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+</body>
+</html>
