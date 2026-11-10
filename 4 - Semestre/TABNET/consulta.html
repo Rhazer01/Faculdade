@@ -105,7 +105,7 @@
                         </select>
                     </div>
                  </div>
-                 
+
                  <!-- Coluna 3: Métrica / Dado -->
                 <div class="col-12 col-md-4">
                     <label for="varMetrica" class="form-label small fw-semibold text-secondary">
@@ -127,10 +127,63 @@
                 </div>
              </div>
 
-
-
-
         </section>
+        <!-- PASSO 2: PERÍODOS DISPONÍVEIS -->
+         <section class="card border border-dark-subtle rounded-0 p-4 mb-4 bg-white shadow-sm">
+
+            <!-- Cabeçalho do Passo 2: Título à esquerda , Ação Rápidas à direita -->
+             <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 gap-2">
+                <div>
+                    <h2 class="h6 fw-bold mb-1 text-dark">Passo 2: Períodos Disponíveis</h2>
+                    <p class="text-muted small mb-0">Marque os meses/ano desejados.</p>
+                </div>
+
+                <!-- Botões de Ação Rápida -->
+                 <div class="d-flex gap-2">
+                    <button type="button" class="btn btn-sm text-white fw-medium px-3 rounded-1" style="background-color: #1351B4;">
+                        Marcar Todos
+                    </button>
+                    <button type="button" class="btn btn-sm btn-secondary fw-medium px-3 rounded-1" style="background-color: #b0bec5; border-color: #b0bec5; color: #37474f;">
+                        Desmarcar Todos
+                    </button>
+                 </div>
+             </div>
+
+             <!-- Lista de Chips / Botões de Período -->
+            <div class="d-flex flex-wrap gap-3 pt-2">
+                
+                <!-- Meses Selecionados (Azul com Check) -->
+                <button type="button" class="btn text-white fw-semibold px-4 py-2 rounded-1 d-flex align-items-center gap-2" style="background-color: #1351B4; border-color: #1351B4;">
+                    <span>Jul/2026</span>
+                    <i class="fa-solid fa-check small"></i>
+                </button>
+                <button type="button" class="btn text-white fw-semibold px-4 py-2 rounded-1 d-flex align-items-center gap-2" style="background-color: #1351B4; border-color: #1351B4;">
+                    <span>Jun/2026</span>
+                    <i class="fa-solid fa-check small"></i>
+                </button>
+                <button type="button" class="btn text-white fw-semibold px-4 py-2 rounded-1 d-flex align-items-center gap-2" style="background-color: #1351B4; border-color: #1351B4;">
+                    <span>Mai/2026</span>
+                    <i class="fa-solid fa-check small"></i>
+                </button>
+                <button type="button" class="btn text-white fw-semibold px-4 py-2 rounded-1 d-flex align-items-center gap-2" style="background-color: #1351B4; border-color: #1351B4;">
+                    <span>Abr/2026</span>
+                    <i class="fa-solid fa-check small"></i>
+                </button>
+                <!-- Meses Desmarcados (Muted com X) -->
+                <button type="button" class="btn fw-semibold px-4 py-2 rounded-1 d-flex align-items-center gap-2 text-white" style="background-color: #8da4c4; border-color: #8da4c4;">
+                    <span>Mar/2026</span>
+                    <i class="fa-solid fa-xmark small"></i>
+                </button>
+                <button type="button" class="btn fw-semibold px-4 py-2 rounded-1 d-flex align-items-center gap-2 text-white" style="background-color: #8da4c4; border-color: #8da4c4;">
+                    <span>Fev/2026</span>
+                    <i class="fa-solid fa-xmark small"></i>
+                </button>
+            </div>
+        </section>
+
+         
+
+
      </main>
 
 </body>
