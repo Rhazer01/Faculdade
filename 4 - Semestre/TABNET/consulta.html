@@ -34,7 +34,6 @@
 
             <!-- Lado Direito: Links de Acesso, Ícones de Utilidade e Perfil -->
             <div class="d-flex align-items-center gap-3">
-
                 <!-- Ícone de Ação/Suporte -->
                 <div class="d-flex align-items-center gap-3 border-start ps-3" style="color: #1351B4;">
                     <a href="#" class="text-decoration-none" title="Estatísticas" style="color: #1351B4;"><i class="fa-solid fa-chart-simple"></i></a>
@@ -55,22 +54,22 @@
         </div>
     </header>
 
-    <!-- CONTEUDO PRINCIPAL (ÁREA DE CONSULTA) -->
-     <main class="container my-4">
+    <!-- CONTEÚDO PRINCIPAL (ÁREA DE CONSULTA) -->
+    <main class="container my-4">
 
-        <!-- PASSO 1: VÁRIÁVEIS DISPONÍVEIS -->
+        <!-- PASSO 1: VARIÁVEIS DISPONÍVEIS -->
         <section class="card border border-dark-subtle rounded-0 p-4 mb-4 bg-white shadow-sm">
 
             <!-- Título do passo -->
-            <h2 class="h6 fw-bold mb-3 text-dark">Passo 1: Váriaveis Disponíveis</h2>
+            <h2 class="h6 fw-bold mb-3 text-dark">Passo 1: Variáveis Disponíveis</h2>
 
             <!-- Grid de 3 colunas (Linha, Coluna e Métrica) -->
-             <div class="row g-3">
+            <div class="row g-3">
 
                 <!-- Coluna 1: Linha -->
-                 <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4">
                     <label for="varLinha" class="form-label small fw-semibold text-secondary d-flex align-items-center gap-1">
-                        Váriavel da Linha <span class="text-danger">*</span>
+                        Variável da Linha <span class="text-danger">*</span>
                         <i class="fa-regular fa-circle-question text-muted" title="Define o que aparecerá nas linhas da tabela"></i>
                     </label>
                     <div class="input-group">
@@ -85,10 +84,10 @@
                             <option value="4">Sexo</option>
                         </select>
                     </div>
-                 </div>
+                </div>
                 
-                 <!-- Coluna 2: Coluna -->
-                 <div class="col-12 col-md-4">
+                <!-- Coluna 2: Coluna -->
+                <div class="col-12 col-md-4">
                     <label for="varColuna" class="form-label small fw-semibold text-secondary">
                         Variável da Coluna <span class="text-danger">*</span>
                     </label>
@@ -104,9 +103,9 @@
                             <option value="4">Não ativa</option>
                         </select>
                     </div>
-                 </div>
+                </div>
 
-                 <!-- Coluna 3: Métrica / Dado -->
+                <!-- Coluna 3: Métrica / Dado -->
                 <div class="col-12 col-md-4">
                     <label for="varMetrica" class="form-label small fw-semibold text-secondary">
                         Dado / Conteúdo (Métrica) <span class="text-danger">*</span>
@@ -125,33 +124,33 @@
                         </select>
                     </div>
                 </div>
-             </div>
 
+            </div>
         </section>
-        <!-- PASSO 2: PERÍODOS DISPONÍVEIS -->
-         <section class="card border border-dark-subtle rounded-0 p-4 mb-4 bg-white shadow-sm">
 
-            <!-- Cabeçalho do Passo 2: Título à esquerda , Ação Rápidas à direita -->
-             <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 gap-2">
+        <!-- PASSO 2: PERÍODOS DISPONÍVEIS -->
+        <section class="card border border-dark-subtle rounded-0 p-4 mb-4 bg-white shadow-sm">
+
+            <!-- Cabeçalho do Passo 2: Título à esquerda, Ações Rápidas à direita -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 gap-2">
                 <div>
                     <h2 class="h6 fw-bold mb-1 text-dark">Passo 2: Períodos Disponíveis</h2>
                     <p class="text-muted small mb-0">Marque os meses/ano desejados.</p>
                 </div>
 
                 <!-- Botões de Ação Rápida -->
-                 <div class="d-flex gap-2">
+                <div class="d-flex gap-2">
                     <button type="button" class="btn btn-sm text-white fw-medium px-3 rounded-1" style="background-color: #1351B4;">
                         Marcar Todos
                     </button>
                     <button type="button" class="btn btn-sm btn-secondary fw-medium px-3 rounded-1" style="background-color: #b0bec5; border-color: #b0bec5; color: #37474f;">
                         Desmarcar Todos
                     </button>
-                 </div>
-             </div>
+                </div>
+            </div>
 
-             <!-- Lista de Chips / Botões de Período -->
+            <!-- Lista de Chips / Botões de Período -->
             <div class="d-flex flex-wrap gap-3 pt-2">
-                
                 <!-- Meses Selecionados (Azul com Check) -->
                 <button type="button" class="btn text-white fw-semibold px-4 py-2 rounded-1 d-flex align-items-center gap-2" style="background-color: #1351B4; border-color: #1351B4;">
                     <span>Jul/2026</span>
@@ -169,6 +168,7 @@
                     <span>Abr/2026</span>
                     <i class="fa-solid fa-check small"></i>
                 </button>
+
                 <!-- Meses Desmarcados (Muted com X) -->
                 <button type="button" class="btn fw-semibold px-4 py-2 rounded-1 d-flex align-items-center gap-2 text-white" style="background-color: #8da4c4; border-color: #8da4c4;">
                     <span>Mar/2026</span>
@@ -181,10 +181,115 @@
             </div>
         </section>
 
-         
+        <!-- PASSO 3: FILTROS ESPECÍFICOS -->
+        <section class="card border border-dark-subtle rounded-0 p-4 mb-4 bg-white shadow-sm">
+            
+            <!-- Título do Passo 3 -->
+            <div class="mb-3">
+                <h2 class="h6 fw-bold mb-1 text-dark">Passo 3: Filtros Específicos (Opcional)</h2>
+                <p class="text-muted small mb-0">Clique nos itens para filtrar por categorias específicas.</p>
+            </div>
 
+            <!-- Grid de 2 Sub-Painéis -->
+            <div class="row g-4">
 
-     </main>
+                <!-- Sub-Painel 1 (Esquerda): Capítulo CID-10 -->
+                <div class="col-12 col-lg-6">
+                    <div class="border border-dark-subtle p-3 h-100">
+
+                        <!-- Cabeçalho do Sub-painel -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="small fw-bold text-dark d-flex align-items-center gap-1">
+                                Capítulo CID-10
+                                <i class="fa-regular fa-circle-question text-muted" title="Classificação Internacional de Doenças"></i>
+                            </span>
+                            <span class="text-muted" style="font-size: 0.75rem;">Todos selecionados</span>
+                        </div>
+
+                        <!-- Campo de Busca de Doenças -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text bg-white border-end-0 text-muted">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="text" class="form-control border-start-0 border-end-0" placeholder="Buscar doença ou código (ex: Respiratório)..." style="font-size: 0.85rem;">
+                            <span class="input-group-text bg-white border-start-0 text-muted">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </div>
+
+                        <!-- Lista de Checkboxes CID-10 -->
+                        <div class="d-flex flex-column gap-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cid1" checked style="accent-color: #1351B4;">
+                                <label class="form-check-label small text-dark" for="cid1">
+                                    I. Doenças infecciosas e parasitárias
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cid2" checked style="accent-color: #1351B4;">
+                                <label class="form-check-label small text-dark" for="cid2">
+                                    IX. Doenças do aparelho circulatório
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cid3" checked style="accent-color: #1351B4;">
+                                <label class="form-check-label small text-dark" for="cid3">
+                                    X. Doenças do aparelho respiratório
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cid4" checked style="accent-color: #1351B4;">
+                                <label class="form-check-label small text-dark" for="cid4">
+                                    XI. Doenças do aparelho digestivo
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Sub-Painel 2 (Direita): Caráter de Atendimento -->
+                <div class="col-12 col-lg-6">
+                    <div class="border border-dark-subtle p-3 h-100">
+                        
+                        <!-- Cabeçalho do Sub-Painel -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="small fw-bold text-dark d-flex align-items-center gap-1">
+                                Caráter de Atendimento
+                                <i class="fa-regular fa-circle-question text-muted" title="Tipo de internação realizada"></i>
+                            </span>
+                            <span class="text-muted" style="font-size: 0.75rem;">Todos selecionados</span>
+                        </div>
+
+                        <!-- Lista de Checkboxes de Atendimento -->
+                        <div class="d-flex flex-column gap-2 pt-1">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="atend1" checked style="accent-color: #1351B4;">
+                                <label class="form-check-label small text-dark" for="atend1">
+                                    Eletivo (Programado)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="atend2" checked style="accent-color: #1351B4;">
+                                <label class="form-check-label small text-dark" for="atend2">
+                                    Urgência / Emergência
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="atend3" checked style="accent-color: #1351B4;">
+                                <label class="form-check-label small text-dark" for="atend3">
+                                    Outros tipos de acidente no trânsito/trabalho
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
 
 </body>
 </html>
