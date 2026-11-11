@@ -54,7 +54,69 @@
         </div>
     </header>
 
+        <!-- CONTEÚDO PRINCIPAL (CARD DE CARREGAMENTO CENTRALIZADO) -->
+    <main class="container my-5 py-4 d-flex justify-content-center align-items-center" style="min-height: 55vh;">
+        
+        <!-- Card Central -->
+        <div class="card border border-dark-subtle rounded-0 p-4 p-md-5 bg-white shadow-sm text-center" style="max-width: 620px; width: 100%;">
+            
+            <!-- 1. Círculo de Progresso 75% (SVG Vetorial) -->
+            <div class="d-flex justify-content-center mb-3">
+                <div class="position-relative d-inline-flex justify-content-center align-items-center">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <!-- Círculo cinza de fundo -->
+                        <circle cx="50" cy="50" r="42" stroke="#e9ecef" stroke-width="6" fill="transparent" />
+                        <!-- Arco azul de 75% -->
+                        <circle cx="50" cy="50" r="42" stroke="#1351B4" stroke-width="6" fill="transparent"
+                                stroke-dasharray="263.89" stroke-dashoffset="65.97" stroke-linecap="round"
+                                transform="rotate(-90 50 50)" />
+                    </svg>
+                    <!-- Número no centro -->
+                    <span class="position-absolute fw-bold fs-4" style="color: #1351B4;">75%</span>
+                </div>
+            </div>
 
+            <!-- 2. Título da Ação -->
+            <h2 class="h5 fw-bold text-dark mb-2">Processando Dados no Banco DATASUS...</h2>
+            
+            <!-- 3. Subtítulo Informativo (Contexto) -->
+            <p class="text-muted small mb-4 px-md-3" style="font-size: 0.85rem; line-height: 1.4;">
+                Cruzando dados de Morbidade Hospitalar (SIH/SUS) para o estado de São Paulo no período de Abr/2026 a Jul/2026.
+            </p>
+
+            <!-- 4. Barra de Progresso Horizontal -->
+            <div class="progress mb-2 rounded-pill bg-light border border-light-subtle" style="height: 10px;">
+                <div class="progress-bar rounded-pill" role="progressbar" 
+                     style="width: 75%; background-color: #1351B4;" 
+                     aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+            </div>
+
+            <!-- Informações de Status -->
+            <div class="d-flex justify-content-between text-muted mb-4" style="font-size: 0.75rem;">
+                <span>Consultando 42.180 registros</span>
+                <span class="fw-medium">75% concluído</span>
+            </div>
+
+            <!-- Linha Divisória Suave -->
+            <hr class="border-secondary-subtle opacity-50 mb-4">
+
+            <!-- 5. Botões de Ação (Cancelar e Ver Resultado) -->
+            <div class="d-flex justify-content-center gap-3">
+                <a href="consulta.html" class="btn btn-outline-primary rounded-pill px-4 fw-semibold" 
+                   style="color: #1351B4; border-color: #1351B4;">
+                    Cancelar
+                </a>
+                
+                <a href="resultado.html" class="btn text-white rounded-pill px-4 fw-semibold" 
+                   style="background-color: #1351B4; border-color: #1351B4;">
+                    Ver resultado
+                </a>
+            </div>
+
+        </div>
+
+    </main>
 
     <!-- RODAPÉ OFICIAL GOV.BR -->
     <footer style="background-color: #071d41;" class="text-white pt-5 pb-3">
