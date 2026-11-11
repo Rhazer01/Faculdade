@@ -6,3 +6,186 @@ body, button, input, select, textarea {
 #cpf:focus {
     background-color: #fff3cd; 
 }
+
+/* ==========================================================================
+   MODO ALTO CONTRASTE (Padrão de Acessibilidade e-MAG / Gov.br)
+   ========================================================================== */
+
+html.alto-contraste,
+body.alto-contraste {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+/* Estruturas e containers */
+body.alto-contraste header,
+body.alto-contraste footer,
+body.alto-contraste main,
+body.alto-contraste .card,
+body.alto-contraste .bg-white,
+body.alto-contraste .bg-light,
+body.alto-contraste .table,
+body.alto-contraste .table-light,
+body.alto-contraste thead,
+body.alto-contraste tbody,
+body.alto-contraste tr,
+body.alto-contraste th,
+body.alto-contraste td,
+body.alto-contraste .input-group-text,
+body.alto-contraste .form-select,
+body.alto-contraste .form-control {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+/* Textos e títulos */
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste h4,
+body.alto-contraste h5,
+body.alto-contraste h6,
+body.alto-contraste p,
+body.alto-contraste span:not(.badge),
+body.alto-contraste label,
+body.alto-contraste .text-dark,
+body.alto-contraste .text-muted,
+body.alto-contraste .text-secondary,
+body.alto-contraste .text-white-50 {
+    color: #ffffff !important;
+}
+
+/* Links e destaques em amarelo */
+body.alto-contraste a {
+    color: #ffff00 !important;
+}
+
+body.alto-contraste a:hover {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+/* Ícones em amarelo de alto contraste */
+body.alto-contraste i,
+body.alto-contraste i[style] {
+    color: #ffff00 !important;
+}
+
+/* Botões */
+body.alto-contraste .btn,
+body.alto-contraste .btn-outline-primary,
+body.alto-contraste .btn-outline-secondary,
+body.alto-contraste .btn-secondary,
+body.alto-contraste .btn-light {
+    background-color: #000000 !important;
+    color: #ffff00 !important;
+    border: 2px solid #ffff00 !important;
+    box-shadow: none !important;
+}
+
+body.alto-contraste .btn:hover {
+    background-color: #ffff00 !important;
+    color: #000000 !important;
+    border-color: #ffff00 !important;
+}
+
+/* Botão de destaque primário */
+body.alto-contraste .btn-primary,
+body.alto-contraste button[type="submit"] {
+    background-color: #ffff00 !important;
+    color: #000000 !important;
+    border: 2px solid #ffff00 !important;
+    font-weight: bold !important;
+}
+
+body.alto-contraste .btn-primary:hover,
+body.alto-contraste button[type="submit"]:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+}
+
+/* Badges */
+body.alto-contraste .badge {
+    background-color: #000000 !important;
+    border: 1px solid #ffff00 !important;
+    color: #ffff00 !important;
+}
+
+/* Checkboxes e Radios */
+body.alto-contraste .form-check-input {
+    background-color: #000000 !important;
+    border: 2px solid #ffffff !important;
+}
+
+body.alto-contraste .form-check-input:checked {
+    background-color: #ffff00 !important;
+    border-color: #ffff00 !important;
+}
+
+/* Linhas divisórias e bordas */
+body.alto-contraste hr,
+body.alto-contraste .border,
+body.alto-contraste .border-top,
+body.alto-contraste .border-bottom,
+body.alto-contraste .border-start,
+body.alto-contraste .border-end,
+body.alto-contraste .border-dark-subtle,
+body.alto-contraste .border-secondary {
+    border-color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Tabelas */
+body.alto-contraste .table-bordered th,
+body.alto-contraste .table-bordered td {
+    border: 1px solid #ffffff !important;
+}
+
+body.alto-contraste th[style*="background-color"],
+body.alto-contraste td[style*="background-color"] {
+    background-color: #1a1a1a !important;
+    color: #ffff00 !important;
+}
+
+/* Barras de progresso e SVG */
+body.alto-contraste .progress {
+    background-color: #000000 !important;
+    border: 1px solid #ffffff !important;
+}
+
+body.alto-contraste .progress-bar {
+    background-color: #ffff00 !important;
+}
+
+body.alto-contraste svg circle:first-child {
+    stroke: #333333 !important;
+}
+
+body.alto-contraste svg circle:last-child {
+    stroke: #ffff00 !important;
+}
+
+body.alto-contraste .position-relative span {
+    color: #ffff00 !important;
+}
+
+/* Paginação */
+body.alto-contraste .page-link {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+body.alto-contraste .page-item.active .page-link {
+    background-color: #ffff00 !important;
+    color: #000000 !important;
+    border-color: #ffff00 !important;
+}
+
+/* Inversão da logo gov.br no header para ficar branca */
+body.alto-contraste .navbar-brand img {
+    filter: brightness(0) invert(1) !important;
+}

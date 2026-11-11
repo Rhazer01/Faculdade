@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css">
     <!-- 5. Nosso CSS próprio -->
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (localStorage.getItem('alto-contraste') === 'true') {
+            document.documentElement.classList.add('alto-contraste');
+        }
+    </script>
 </head>
 <body class="bg-white">
 
@@ -28,7 +33,7 @@
 
             <!-- Atalhos de Acessibilidade (Alto contraste e Vlibras) -->
             <div class="d-flex align-items-center gap-4">
-                <a href="#" class="text-decoration-none text-dark small d-flex align-items-center gap-3">
+                <a href="#" id="btn-contraste" title="Alto Contraste" class="text-decoration-none text-dark small d-flex align-items-center gap-3">
                     <i style="color: rgb(19, 81, 180);" class="fa-solid fa-circle-half-stroke"></i>
                     <span class="fw-medium">Alto contraste</span>
                 </a>
@@ -130,5 +135,7 @@
         </div>
     </main>
 
+    <!-- Controle de Alto Contraste -->
+    <script src="js/contraste.js"></script>
 </body>
 </html>
