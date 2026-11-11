@@ -38,7 +38,7 @@
                     <span class="fw-medium">Alto contraste</span>
                 </a>
 
-                <a href="#" class="text-decoration-none text-dark small d-flex align-items-center gap-3">
+                <a href="#" id="btn-vlibras" title="VLibras" class="text-decoration-none text-dark small d-flex align-items-center gap-3">
                     <i style="color: rgb(19, 81, 180);" class="fa-solid fa-ear-deaf"></i>
                     <span class="fw-medium">Vlibras</span>
                 </a>
@@ -135,7 +135,19 @@
         </div>
     </main>
 
-    <!-- Controle de Alto Contraste -->
+    <!-- Controle de Alto Contraste & VLibras -->
     <script src="js/contraste.js"></script>
+
+    <!-- Widget Oficial do VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 </html>

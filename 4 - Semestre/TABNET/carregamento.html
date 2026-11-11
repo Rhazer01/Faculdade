@@ -46,6 +46,7 @@
                     <a href="#" class="text-decoration-none" title="Unidades de Saúde" style="color: #1351B4;"><i class="fa-solid fa-hospital"></i></a>
                     <a href="#" class="text-decoration-none" title="Mensagens" style="color: #1351B4;"><i class="fa-solid fa-comment-dots"></i></a>
                     <a href="#" id="btn-contraste" class="text-decoration-none" title="Alto Contraste" style="color: #1351B4;"><i class="fa-solid fa-circle-half-stroke"></i></a>
+                    <a href="#" id="btn-vlibras" class="text-decoration-none" title="VLibras" style="color: #1351B4;"><i class="fa-solid fa-ear-deaf"></i></a>
                 </div>
 
                 <!-- Botão de Login / Perfil -->
@@ -208,7 +209,19 @@
         </div>
     </footer>
 
-    <!-- Controle de Alto Contraste -->
+    <!-- Controle de Alto Contraste & VLibras -->
     <script src="js/contraste.js"></script>
+
+    <!-- Widget Oficial do VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 </html>
