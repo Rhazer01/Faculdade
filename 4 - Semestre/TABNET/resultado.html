@@ -70,13 +70,12 @@
                         <h2 class="h5 fw-bold mb-0 text-dark">Total de Internações por Município e Ano</h2>
 
                         <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-2 py-1" style="font-size: 0.75rem;">
-                            Consulta Conluída
+                            Consulta Concluída
                         </span>
-
                     </div>
 
                     <!-- Tags dos filtros aplicados -->
-                     <div class="d-flex flex-wrap align-items-center gap-2 small">
+                    <div class="d-flex flex-wrap align-items-center gap-2 small">
                         <span class="badge bg-light text-secondary border px-2 py-1">Linha: Município (SP)</span>
                         <span class="badge bg-light text-secondary border px-2 py-1">Coluna: Período (2026)</span>
                         <span class="badge bg-light text-secondary border px-2 py-1">Métrica: Internações</span>
@@ -84,8 +83,7 @@
                         <a href="consulta.html" class="text-decoration-none fw-semibold ms-1" style="color: #1351B4; font-size: 0.8rem;">
                             Editar Filtros
                         </a>
-
-                     </div>
+                    </div>
                 </div>
 
                 <!-- Lado Direito: Botões de Ação (Exportar, Imprimir, Nova Consulta) -->
@@ -164,6 +162,105 @@
             </div>
 
 
+        </section>
+
+        <!-- CARD 3: TABELA DE DADOS DETALHADA -->
+        <section class="card border border-dark-subtle rounded-0 p-4 mb-4 bg-white shadow-sm">
+            <!-- Tabela com Rolagem Responsiva -->
+            <div class="table-responsive">
+                <table class="table table-bordered align-middle mb-0 text-center small">
+
+                    <!-- Cabeçalho da Tabela -->
+                    <thead class="table-light text-secondary">
+                        <tr>
+                            <th scope="col" class="text-start py-3 ps-3 text-dark fw-semibold" style="min-width: 220px;">
+                                Código & Município
+                            </th>
+                            <th scope="col" class="py-3 text-dark fw-semibold">Abr/2026</th>
+                            <th scope="col" class="py-3 text-dark fw-semibold">Mai/2026</th>
+                            <th scope="col" class="py-3 text-dark fw-semibold">Jun/2026</th>
+                            <th scope="col" class="py-3 text-dark fw-semibold">Jul/2026</th>
+                            <th scope="col" class="py-3 fw-bold" style="background-color: #f0f5fc; color: #1351B4;">
+                                Total Acumulado
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <!-- Corpo de Dados -->
+                    <tbody>
+                        <!-- Linha 1: São Paulo -->
+                        <tr>
+                            <td class="text-start ps-3 fw-bold text-dark">355030 São Paulo</td>
+                            <td>12.110</td>
+                            <td>11.980</td>
+                            <td>12.040</td>
+                            <td>12.080</td>
+                            <td class="fw-bold" style="background-color: #f8fafd; color: #1351B4;">48.210</td>
+                        </tr>
+                        <!-- Linha 2: Campinas -->
+                        <tr>
+                            <td class="text-start ps-3 fw-bold text-dark">350950 Campinas</td>
+                            <td>3.610</td>
+                            <td>3.580</td>
+                            <td>3.620</td>
+                            <td>3.580</td>
+                            <td class="fw-bold" style="background-color: #f8fafd; color: #1351B4;">14.390</td>
+                        </tr>
+                        <!-- Linha 3: Santos -->
+                        <tr>
+                            <td class="text-start ps-3 fw-bold text-dark">354850 Santos</td>
+                            <td>2.980</td>
+                            <td>2.940</td>
+                            <td>2.970</td>
+                            <td>2.960</td>
+                            <td class="fw-bold" style="background-color: #f8fafd; color: #1351B4;">11.850</td>
+                        </tr>
+                        <!-- Linha 4: Ribeirão Preto -->
+                        <tr>
+                            <td class="text-start ps-3 fw-bold text-dark">354340 Ribeirão Preto</td>
+                            <td>2.340</td>
+                            <td>2.380</td>
+                            <td>2.350</td>
+                            <td>2.350</td>
+                            <td class="fw-bold" style="background-color: #f8fafd; color: #1351B4;">9.420</td>
+                        </tr>
+                        <!-- Linha 5: Total Geral (Rodapé da Tabela) -->
+                        <tr class="table-light border-top border-dark-subtle">
+                            <td class="text-start ps-3 fw-bold text-dark">Total Geral (Amostra)</td>
+                            <td class="fw-bold text-dark">21.040</td>
+                            <td class="fw-bold text-dark">20.880</td>
+                            <td class="fw-bold text-dark">20.980</td>
+                            <td class="fw-bold text-dark">20.970</td>
+                            <td class="fw-bold" style="background-color: #f0f5fc; color: #1351B4;">83.870</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Rodapé do Card: Fonte à Esquerda e Paginação à Direita -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-3 pt-3 border-top gap-2">
+                <span class="text-muted small" style="font-size: 0.78rem;">
+                    Fonte: Ministério da Saúde - Sistema de Informações Hospitalares do SUS (SIH/SUS)
+                </span>
+
+                <!-- Paginação -->
+                <nav aria-label="Navegação de páginas">
+                    <ul class="pagination pagination-sm mb-0">
+                        <li class="page-item disabled">
+                            <a class="page-link text-muted" href="#" tabindex="-1">« Anterior</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link text-white fw-bold" href="#" style="background-color: #1351B4; border-color: #1351B4;">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-dark" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link text-dark" href="#">Próximo »</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </section>
 
     </main>
