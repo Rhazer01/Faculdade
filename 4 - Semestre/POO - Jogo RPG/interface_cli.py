@@ -19,13 +19,10 @@ def desenhar_tabuleiro(mapa):
                 linha += '🗡️ '
             
             elif jogadores_visiveis and jogadores_visiveis[0].get_subclasse() == "Mago":
-                linha += '🪄 '
+                linha += '🧙‍♀️ '
             
             elif jogadores_visiveis and jogadores_visiveis[0].get_subclasse() == "Sacerdote":
                 linha += '⚕️ '
-                
-            elif lista and isinstance(lista[0], Inimigo):
-                linha += '👹'
                 
             else:
                 linha += "· "
@@ -53,6 +50,7 @@ def iniciar_combate(jogador, inimigo, mapa):
         if hasattr(jogador, 'mana'):
             print(f"Sua Mana: {jogador.mana}")
         print(f"Vida do {inimigo.get_nome()}: {inimigo.get_vida()}%")
+        print(f"⚠️ {inimigo.get_nome()} vai fazer um ataque {inimigo.get_proxima_acao().upper()}!")
 
         print("\nEscolha sua ação:")
         print("1 - Ataque Básico")
@@ -65,6 +63,7 @@ def iniciar_combate(jogador, inimigo, mapa):
             print("2 - Usar Curar (Custo: 5 Mana)")
 
         print("3 - Tentar Fugir")
+        print("4 - Defender (o próximo dano recebido cai pela metade)")
 
         opcao = input("Digite o número da sua ação: ").strip()
 
@@ -105,6 +104,9 @@ def iniciar_combate(jogador, inimigo, mapa):
                 return
             else:
                 print(f"\n❌ Falha ao fugir!")
+        elif opcao == "4":
+            jogador.defender()
+            print(f"\n🛡️ {jogador.get_nome()} assumiu postura defensiva!")
         else:
             print("\nOpção inválida! Você perdeu a vez.")
 

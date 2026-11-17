@@ -47,7 +47,6 @@ class RPGApp(ctk.CTk):
             "Guerreiro": "guerreiro.png",
             "Mago": "mago.png",
             "Sacerdote": "sarcedote.png",
-            "Inimigo": "ORC.png",
         }
         return {
             tipo: Image.open(pasta_assets / nome).convert("RGBA")
@@ -123,6 +122,12 @@ class RPGApp(ctk.CTk):
             width=10,
             command=self.fugir,
         ).grid(row=0, column=2, padx=5)
+        ctk.CTkButton(
+            botoes,
+            text="Defender",
+            width=10,
+            command=self.defender,
+        ).grid(row=0, column=3, padx=5)
  
     def ao_redimensionar(self, event):
         # espera o usuário parar de arrastar a borda antes de redesenhar
@@ -181,8 +186,6 @@ class RPGApp(ctk.CTk):
                     )
  
     def tipo_icone(self, personagem):
-        if isinstance(personagem, Inimigo):
-            return "Inimigo"
         if isinstance(personagem, Guerreiro):
             return "Guerreiro"
         if isinstance(personagem, Mago):
@@ -252,7 +255,8 @@ class RPGApp(ctk.CTk):
         self.status_combate.configure(
             text=(
                 f"Sua vida: {self.heroi.get_vida()}% | "
-                f"Vida do inimigo: {self.inimigo_atual.get_vida()}%"
+                f"Vida do inimigo: {self.inimigo_atual.get_vida()}% | "
+                f"Próximo ataque: {self.inimigo_atual.get_proxima_acao().upper()}"
             )
         )
  
@@ -368,6 +372,14 @@ class RPGApp(ctk.CTk):
             self.mensagem.configure(text="Você não conseguiu fugir!")
             self.turno_inimigo()
  
+    def defender(self):
+        if not self.em_combate:
+            return
+
+        self.heroi.defender()
+        self.mensagem.configure(text="Você assumiu postura defensiva!")
+        self.turno_inimigo()
+
     def game_over(self):
         self.em_combate = True  
         msg = CTkMessagebox(

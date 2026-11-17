@@ -164,4 +164,8 @@ POO - Jogo RPG/
   - GitHub: [@HLicio](https://github.com/HLicio)
   - E-mail: [henriquelicio339@gmail.com](mailto:henriquelicio339@gmail.com)
 
+- **Levi Freihat**
+  - GitHub: [@levisferrari](https://github.com/levisferrari)
+  - E-mail: [levi.freihat@gmail.com](mailto:levi.freihat@gmail.com)
+
 ---
