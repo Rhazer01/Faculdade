@@ -67,6 +67,7 @@ class Personagem(ABC):
         self.defesa = defesa
         self.posicao_x = 0
         self.posicao_y = 0
+        self._defendendo = False
 
     def get_nome(self):
         return self._nome
@@ -77,11 +78,22 @@ class Personagem(ABC):
     def get_vida(self):
         return self._vida
 
+    def defender(self):
+        if self._vida <= 0:
+            raise Exception(f"{self._nome} morto.")
+        self._defendendo = True
+
+    def esta_defendendo(self) -> bool:
+        return self._defendendo
+
     def receber_dano(self, dano) -> int:
         """Aplica o dano e retorna o dano real sofrido (após a defesa)."""
         if self._vida <= 0:
             raise Exception(f"{self._nome} morto.")
         dano_real = max(0, dano - self.defesa)
+        if self._defendendo:
+            dano_real //= 2
+            self._defendendo = False
         self._vida = max(0, self._vida - dano_real)
         return dano_real
 
@@ -133,7 +145,7 @@ class Personagem(ABC):
 class Guerreiro(Personagem):
 
     def __init__(self, nome):
-        super().__init__(nome=nome, vida=100, ataque=15, defesa=10)
+        super().__init__(nome=nome, vida=100, ataque=15, defesa=7)
 
     def golpe_pesado(self, alvo):
         dado = random.randint(1, 6)
@@ -219,9 +231,22 @@ class Inimigo(Personagem):
 
     def __init__(self, nome, vida=100, ataque=10, defesa=15):
         super().__init__(nome, vida, ataque, defesa)
+        self._proxima_acao = "fraco"
+        self.escolher_proxima_acao()
+
+    def escolher_proxima_acao(self):
+        self._proxima_acao = random.choice(["fraco", "forte"])
+
+    def get_proxima_acao(self) -> str:
+        return self._proxima_acao
 
     def atacar(self, alvo):
-        return super().atacar(alvo)
+        if self._proxima_acao == "forte":
+            dano_total = self.ataque * 2
+        else:
+            dano_total = self.ataque
+        self.escolher_proxima_acao()
+        return alvo.receber_dano(dano_total)
 
 DIFICULDADES = {
     "1": ("Fácil", 1),
